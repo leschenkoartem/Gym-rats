@@ -11,117 +11,110 @@ struct MainView: View {
     
     @EnvironmentObject var user : User
     @State var selected = 2
-    @State var information = false
+    @State var information = true
     @State var isSheet = false
     var color_ = Color.random
     var body: some View {
         
-            NavigationView {
-                    ZStack{
-                        Color("bgcolor").edgesIgnoringSafeArea(.all)
+        NavigationView {
+            
+            ZStack{
+                
+                Color("bgcolor").edgesIgnoringSafeArea(.all)
+    
+                ZStack{
+                    
+                    HStack{
                         
-                        
-                            ZStack{
-                                HStack{
-                                    Button {
-                                        isSheet.toggle()
-                                    } label: {
-                                        HStack{
-                                            ZStack{
-                                                
-                                                Circle()
-                                                    .foregroundColor(color_)
-                                                    .frame(maxWidth: 46)
-                                                Text("\(String(user.firstlatterName))")
-                                                    .foregroundColor(.white)
-                                                    .font(.custom("", size: 30))
-                                            }
-                                           
-                                            Text(user.name + " " + user.lastName )
-                                                .padding(.trailing, 13)
-                                        }.padding(2)
-                                            .background()
-                                            .cornerRadius(100)
-                                            .padding(.leading)
-                                            .foregroundColor(.black)
-                                            .shadow(color: .black, radius: 5, y: 3)
-                                    }
+                        Button {
+                            isSheet.toggle()
+                        } label: {
+                            HStack{
+                                
+                                ZStack{
                                     
-                                    Spacer()
+                                    Circle()
+                                        .foregroundColor(color_)
+                                        .frame(maxWidth: 46)
                                     
-                                    Button {
-                                        information.toggle()
-                                    } label: {
-                                        Image(systemName: "gear")
-                                            .foregroundColor(.white)
-                                            .font(.custom("", size: 30))
-                                            .padding(.top, 10)
-                                            .padding(.horizontal, 10)
-                                            .shadow(color: .black, radius: 12)
-                                    }
-
-                                    
-                                    
+                                    Text("\(String(user.firstlatterName))")
+                                        .foregroundColor(.white)
+                                        .font(.custom("", size: 30))
                                 }
                                 
-
-                                    
-                                }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                                .sheet(isPresented: $isSheet) {
-                                    if #available(iOS 16.0, *) {
-                                        AccountView(isSheet: $isSheet, color_: color_)
-                                            .presentationDetents([.fraction(0.35)])
-                                    } else {
-                                        AccountView(isSheet: $isSheet, color_: color_)
-                                    }
-                                }
-
-                            
-                            
-                        
-                        
-                                                
-                        VStack(spacing: 30){
-                      
-                            Nav_link(view: InformationView(), text: "Калькулятори")
-                            Nav_link(view: InformationView(), text: "Спортивні добавки")
-                            Nav_link(view: InformationView(), text: "Здорове харчування")
-                        
-                        }
-                        
-                        ZStack{
-                            HStack{
-                                Text("Made by:")
-                                    .foregroundColor(.indigo)
-                                Link(destination: URL(string: "https://www.instagram.com/leschenko___/")!) {
-                                    Text("leschenko___").foregroundColor(.red)
-                                    Text("(clickable)")
-                                        
-                                }
-                            }.padding(8)
-                                .frame(maxWidth: .infinity)
+                                Text(user.name + " " + user.lastName )
+                                    .padding(.trailing, 13)
+                                
+                            }.padding(2)
                                 .background()
-                                .shadow(color: .black, radius: 12)
-                                .frame(maxHeight: .infinity, alignment: .bottom)
-                                .padding(.bottom, 16)
+                                .cornerRadius(100)
+                                .padding(.leading)
+                                .foregroundColor(.black)
+                                .shadow(color: .black, radius: 5, y: 3)
+                            
                         }
                         
+                        Spacer()
+                        
+                        Button {
+                            information.toggle()
+                        } label: {
+                            Image(systemName: "gear")
+                                .foregroundColor(.white)
+                                .font(.custom("", size: 30))
+                                .padding(.top, 10)
+                                .padding(.horizontal, 10)
+                                .shadow(color: .black, radius: 12)
+                        }
                         
                     }
+          
+                }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                    .sheet(isPresented: $isSheet) {
+                        
+                        if #available(iOS 16.0, *) {
+                            AccountView(isSheet: $isSheet, color_: color_)
+                                .presentationDetents([.fraction(0.35)])
+                        } else {
+                            AccountView(isSheet: $isSheet, color_: color_)
+                        }   
+                    }
+                
+                VStack(spacing: 30){
                     
+                    Nav_link(view: InformationView(), text: "Калькулятори")
+                    Nav_link(view: InformationView(), text: "Спортивні добавки")
+                    Nav_link(view: InformationView(), text: "Здорове харчування")
                     
-                }.fullScreenCover(isPresented: $information) {
-                        InformationView()
-                            .background(Color("bgcolor"))
-                            .accentColor(.indigo)
+                }
+                
+                ZStack{
                     
-    }
-        
+                    HStack{
+                        
+                        Text("Made by:")
+                            .foregroundColor(.indigo)
+                        
+                        Link(destination: URL(string: "https://www.instagram.com/leschenko___/")!) {
+                            Text("leschenko___").foregroundColor(.red)
+                            Text("(clickable)")
+                            
+                        }
+                    }.padding(8)
+                        .frame(maxWidth: .infinity)
+                        .background()
+                        .shadow(color: .black, radius: 12)
+                        .frame(maxHeight: .infinity, alignment: .bottom)
+                        .padding(.bottom, 16)
+                }
+            }
+                     
+        }.fullScreenCover(isPresented: $information) {
+            InformationView()
+                .background(Color("bgcolor"))
+                .accentColor(.indigo)
             
-        
-        
-        
-        
+        }
     }
 }
 

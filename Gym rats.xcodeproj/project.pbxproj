@@ -84,9 +84,9 @@
 		E3DD1B902996EC8D00B470A9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E3AE319B2996D33F00CC1DAE /* MainView.swift */,
 				E3AE31A72996D38B00CC1DAE /* InformationView.swift */,
 				E3DD1B992998F32000B470A9 /* AccountView.swift */,
-				E3AE319B2996D33F00CC1DAE /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

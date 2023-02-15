@@ -17,11 +17,14 @@ struct InformationView: View {
     
     
     var body: some View {
+        
         ZStack{
             Color("bgcolor").edgesIgnoringSafeArea(.all)
+            
             VStack {
                 
                 ZStack{
+                    
                     Text("")
                         .frame(maxWidth: .infinity)
                         .background()
@@ -33,30 +36,39 @@ struct InformationView: View {
                         .shadow(color: .black, radius: 10)
                 }.padding(.bottom, -25)
                 
-                
-                Form(){
+                Form{
                     
                     Section(header: Text("How can you be contacted?").frame(maxWidth: .infinity)){
                         TextField("Name ...", text: $user.name)
                             .textInputAutocapitalization(.words)
                             .autocorrectionDisabled(true)
                             .keyboardType(.alphabet)
+                        
                         TextField("Lastname ...", text: $user.lastName)
                             .textInputAutocapitalization(.words)
                             .autocorrectionDisabled(true)
                             .keyboardType(.alphabet)
+                        
+                        Picker("", selection: $user.maleInt) {
+                            Text("Man").tag(1)
+                            Text("Women").tag(2)
+                        }.pickerStyle(SegmentedPickerStyle())
+                            .padding(.vertical, 3)
+                        
+                        
                     }
                     
                     Section(header: Text("what about your physics?").frame(maxWidth: .infinity)){
                         
-                        
                         TextFild_1(smalltext: "years", data: $user.userOld, text: "I`m ... old:", range: (1..<100))
+                        
                         TextFild_1(smalltext: "cm", data: $user.userHeight, text: "My height is:", range: (130..<230))
+                        
                         VStack{
                             Text("My weight is \(String(format: "%.1f", user.userWeight)) kg: ")
                             
-                            
                             Slider(value: $user.userWeight, in: 20.0...180.0, step: 0.1)
+                            
                             Stepper("-/+ 0.1 kg", value: $user.userWeight, step: 0.1).padding(.horizontal, 50)
                         }
                     }
@@ -76,8 +88,8 @@ struct InformationView: View {
                             textalert = "Too short lastname"
                             isAlert.toggle()
                         }else if user.name.count < 2{
-                                textalert = "Too short name"
-                                isAlert.toggle()
+                            textalert = "Too short name"
+                            isAlert.toggle()
                         }else{
                             confirmDialog.toggle()
                         }
@@ -86,20 +98,18 @@ struct InformationView: View {
                     } label: {
                         
                         Text("Confirm").frame(maxWidth: .infinity)
-                        
                             .cornerRadius(12)
                         
-                    }
+                        }
+                    
                 }.cornerRadius(12)
                     .padding()
                     .padding(.top, 20)
                     .shadow(color: .black, radius: 10)
                     .accentColor(.indigo)
                 
-            
             }
-            
-            
+               
         }.navigationBarBackButtonHidden(true)
             .confirmationDialog("Do you want finish?", isPresented: $confirmDialog, titleVisibility: .visible) {
                 Button(role: .cancel) {
@@ -113,6 +123,7 @@ struct InformationView: View {
                 } label: {
                     Text("Yeah")
                 }
+                
             }.alert(textalert, isPresented: $isAlert){
                 Text("Ok")
             }
@@ -124,5 +135,3 @@ struct InformationView_Previews: PreviewProvider {
         InformationView().environmentObject(User())
     }
 }
-
-
