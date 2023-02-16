@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3A7ECCA299EAAB400D31E99 /* calcularionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7ECC9299EAAB400D31E99 /* calcularionsView.swift */; };
+		E3A7ECCC299EB77800D31E99 /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7ECCB299EB77800D31E99 /* tabBar.swift */; };
+		E3A7ECCF299EC08700D31E99 /* recordPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7ECCE299EC08700D31E99 /* recordPress.swift */; };
+		E3A7ECD1299EC71800D31E99 /* calculationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7ECD0299EC71800D31E99 /* calculationsViewModel.swift */; };
+		E3A7ECD3299EDDBF00D31E99 /* zhbuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7ECD2299EDDBF00D31E99 /* zhbuView.swift */; };
 		E3AE319A2996D33F00CC1DAE /* Gym_ratsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE31992996D33F00CC1DAE /* Gym_ratsApp.swift */; };
 		E3AE319C2996D33F00CC1DAE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE319B2996D33F00CC1DAE /* MainView.swift */; };
 		E3AE319E2996D34200CC1DAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3AE319D2996D34200CC1DAE /* Assets.xcassets */; };
 		E3AE31A12996D34200CC1DAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3AE31A02996D34200CC1DAE /* Preview Assets.xcassets */; };
 		E3AE31A82996D38B00CC1DAE /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE31A72996D38B00CC1DAE /* InformationView.swift */; };
 		E3AE31AA2996D9C900CC1DAE /* accaounModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE31A92996D9C900CC1DAE /* accaounModel.swift */; };
-		E3DD1B93299702C900B470A9 /* TextFild_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD1B92299702C900B470A9 /* TextFild_1.swift */; };
+		E3DD1B93299702C900B470A9 /* Picker_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD1B92299702C900B470A9 /* Picker_1.swift */; };
 		E3DD1B9629979EB100B470A9 /* Nav_link.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD1B9529979EB100B470A9 /* Nav_link.swift */; };
 		E3DD1B9A2998F32000B470A9 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD1B992998F32000B470A9 /* AccountView.swift */; };
 		E3DD1B9E2999A6C800B470A9 /* listAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD1B9D2999A6C700B470A9 /* listAccount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E3A7ECC9299EAAB400D31E99 /* calcularionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calcularionsView.swift; sourceTree = "<group>"; };
+		E3A7ECCB299EB77800D31E99 /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
+		E3A7ECCE299EC08700D31E99 /* recordPress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recordPress.swift; sourceTree = "<group>"; };
+		E3A7ECD0299EC71800D31E99 /* calculationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculationsViewModel.swift; sourceTree = "<group>"; };
+		E3A7ECD2299EDDBF00D31E99 /* zhbuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zhbuView.swift; sourceTree = "<group>"; };
 		E3AE31962996D33F00CC1DAE /* Gym rats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym rats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3AE31992996D33F00CC1DAE /* Gym_ratsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_ratsApp.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		E3AE319B2996D33F00CC1DAE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -27,7 +37,7 @@
 		E3AE31A02996D34200CC1DAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E3AE31A72996D38B00CC1DAE /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		E3AE31A92996D9C900CC1DAE /* accaounModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accaounModel.swift; sourceTree = "<group>"; };
-		E3DD1B92299702C900B470A9 /* TextFild_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFild_1.swift; sourceTree = "<group>"; };
+		E3DD1B92299702C900B470A9 /* Picker_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker_1.swift; sourceTree = "<group>"; };
 		E3DD1B9529979EB100B470A9 /* Nav_link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav_link.swift; sourceTree = "<group>"; };
 		E3DD1B992998F32000B470A9 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		E3DD1B9D2999A6C700B470A9 /* listAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listAccount.swift; sourceTree = "<group>"; };
@@ -44,9 +54,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E3A7ECCD299EC05C00D31E99 /* calculationsViews */ = {
+			isa = PBXGroup;
+			children = (
+				E3A7ECD2299EDDBF00D31E99 /* zhbuView.swift */,
+				E3A7ECCE299EC08700D31E99 /* recordPress.swift */,
+			);
+			path = calculationsViews;
+			sourceTree = "<group>";
+		};
 		E3AE318D2996D33F00CC1DAE = {
 			isa = PBXGroup;
 			children = (
+				E3A7ECD0299EC71800D31E99 /* calculationsViewModel.swift */,
 				E3AE31982996D33F00CC1DAE /* Gym rats */,
 				E3AE31972996D33F00CC1DAE /* Products */,
 			);
@@ -84,6 +104,8 @@
 		E3DD1B902996EC8D00B470A9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E3A7ECC9299EAAB400D31E99 /* calcularionsView.swift */,
+				E3A7ECCD299EC05C00D31E99 /* calculationsViews */,
 				E3AE319B2996D33F00CC1DAE /* MainView.swift */,
 				E3AE31A72996D38B00CC1DAE /* InformationView.swift */,
 				E3DD1B992998F32000B470A9 /* AccountView.swift */,
@@ -102,9 +124,10 @@
 		E3DD1B942997035E00B470A9 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				E3A7ECCB299EB77800D31E99 /* tabBar.swift */,
 				E3DD1B9D2999A6C700B470A9 /* listAccount.swift */,
 				E3DD1B9529979EB100B470A9 /* Nav_link.swift */,
-				E3DD1B92299702C900B470A9 /* TextFild_1.swift */,
+				E3DD1B92299702C900B470A9 /* Picker_1.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -179,14 +202,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3A7ECD1299EC71800D31E99 /* calculationsViewModel.swift in Sources */,
 				E3AE31AA2996D9C900CC1DAE /* accaounModel.swift in Sources */,
-				E3DD1B93299702C900B470A9 /* TextFild_1.swift in Sources */,
+				E3DD1B93299702C900B470A9 /* Picker_1.swift in Sources */,
 				E3AE31A82996D38B00CC1DAE /* InformationView.swift in Sources */,
 				E3AE319C2996D33F00CC1DAE /* MainView.swift in Sources */,
 				E3DD1B9E2999A6C800B470A9 /* listAccount.swift in Sources */,
+				E3A7ECCA299EAAB400D31E99 /* calcularionsView.swift in Sources */,
 				E3DD1B9A2998F32000B470A9 /* AccountView.swift in Sources */,
 				E3AE319A2996D33F00CC1DAE /* Gym_ratsApp.swift in Sources */,
 				E3DD1B9629979EB100B470A9 /* Nav_link.swift in Sources */,
+				E3A7ECD3299EDDBF00D31E99 /* zhbuView.swift in Sources */,
+				E3A7ECCC299EB77800D31E99 /* tabBar.swift in Sources */,
+				E3A7ECCF299EC08700D31E99 /* recordPress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

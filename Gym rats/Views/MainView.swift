@@ -11,7 +11,7 @@ struct MainView: View {
     
     @EnvironmentObject var user : User
     @State var selected = 2
-    @State var information = true
+    @State var information = false
     @State var isSheet = false
     var color_ = Color.random
     var body: some View {
@@ -74,7 +74,7 @@ struct MainView: View {
                         
                         if #available(iOS 16.0, *) {
                             AccountView(isSheet: $isSheet, color_: color_)
-                                .presentationDetents([.fraction(0.35)])
+                                .presentationDetents([.fraction(0.40), .fraction(0.45)])
                         } else {
                             AccountView(isSheet: $isSheet, color_: color_)
                         }   
@@ -82,7 +82,18 @@ struct MainView: View {
                 
                 VStack(spacing: 30){
                     
-                    Nav_link(view: InformationView(), text: "Калькулятори")
+                    NavigationLink{calculationsView()
+                    } label: {
+                            Text("Калькулятори")
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background()
+                                .cornerRadius(12)
+                                .foregroundColor(.indigo)
+                                .padding(.horizontal, 50)
+                                .shadow(color: .black, radius: 8, y: 5)
+                        
+                    }
                     Nav_link(view: InformationView(), text: "Спортивні добавки")
                     Nav_link(view: InformationView(), text: "Здорове харчування")
                     
@@ -113,6 +124,7 @@ struct MainView: View {
             InformationView()
                 .background(Color("bgcolor"))
                 .accentColor(.indigo)
+                
             
         }
     }

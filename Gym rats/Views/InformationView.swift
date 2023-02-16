@@ -60,9 +60,9 @@ struct InformationView: View {
                     
                     Section(header: Text("what about your physics?").frame(maxWidth: .infinity)){
                         
-                        TextFild_1(smalltext: "years", data: $user.userOld, text: "I`m ... old:", range: (1..<100))
+                        Picker_1(smalltext: "years", data: $user.userOld, text: "I`m ... old:", range: (1..<100))
                         
-                        TextFild_1(smalltext: "cm", data: $user.userHeight, text: "My height is:", range: (130..<230))
+                        Picker_1(smalltext: "cm", data: $user.userHeight, text: "My height is:", range: (130..<230))
                         
                         VStack{
                             Text("My weight is \(String(format: "%.1f", user.userWeight)) kg: ")

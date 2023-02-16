@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TextFild_1: View {
+struct Picker_1: View {
     @EnvironmentObject var user:User
     var smalltext:String
     var data:Binding<Int>
