@@ -57,16 +57,24 @@
 		E3A7ECCD299EC05C00D31E99 /* calculationsViews */ = {
 			isa = PBXGroup;
 			children = (
+				E3A7ECC9299EAAB400D31E99 /* calcularionsView.swift */,
 				E3A7ECD2299EDDBF00D31E99 /* zhbuView.swift */,
 				E3A7ECCE299EC08700D31E99 /* recordPress.swift */,
 			);
 			path = calculationsViews;
 			sourceTree = "<group>";
 		};
-		E3AE318D2996D33F00CC1DAE = {
+		E3A7ECD4299F963900D31E99 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				E3A7ECD0299EC71800D31E99 /* calculationsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E3AE318D2996D33F00CC1DAE = {
+			isa = PBXGroup;
+			children = (
 				E3AE31982996D33F00CC1DAE /* Gym rats */,
 				E3AE31972996D33F00CC1DAE /* Products */,
 			);
@@ -86,6 +94,7 @@
 				E3AE31992996D33F00CC1DAE /* Gym_ratsApp.swift */,
 				E3DD1B912996ECCF00B470A9 /* Models */,
 				E3DD1B902996EC8D00B470A9 /* Views */,
+				E3A7ECD4299F963900D31E99 /* ViewModels */,
 				E3DD1B942997035E00B470A9 /* components */,
 				E3AE319D2996D34200CC1DAE /* Assets.xcassets */,
 				E3AE319F2996D34200CC1DAE /* Preview Content */,
@@ -104,7 +113,6 @@
 		E3DD1B902996EC8D00B470A9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E3A7ECC9299EAAB400D31E99 /* calcularionsView.swift */,
 				E3A7ECCD299EC05C00D31E99 /* calculationsViews */,
 				E3AE319B2996D33F00CC1DAE /* MainView.swift */,
 				E3AE31A72996D38B00CC1DAE /* InformationView.swift */,

@@ -12,9 +12,9 @@ class User: ObservableObject {
     @Published var name:String = ""
     @Published var lastName = ""
     @Published var maleInt = 1
-    @Published var userOld = 27
-    @Published var userHeight = 170
-    @Published var userWeight = 75.0
+    @Published var age = 17
+    @Published var height = 186
+    @Published var weight = 86.0
     
     var maleString:String{
         get{
@@ -27,7 +27,7 @@ class User: ObservableObject {
     }
     
     var BodyMI:String{
-        get{return String(format: "%.1f",userWeight/(pow(Double(userHeight)/100, 2)))}
+        get{return String(format: "%.1f",weight/(pow(Double(height)/100, 2)))}
     }
    
     var firstlatterName:Character{

@@ -60,21 +60,21 @@ struct InformationView: View {
                     
                     Section(header: Text("what about your physics?").frame(maxWidth: .infinity)){
                         
-                        Picker_1(smalltext: "years", data: $user.userOld, text: "I`m ... old:", range: (1..<100))
+                        Picker_1(smalltext: "years", data: $user.age, text: "I`m ... old:", range: (6..<100))
                         
-                        Picker_1(smalltext: "cm", data: $user.userHeight, text: "My height is:", range: (130..<230))
+                        Picker_1(smalltext: "cm", data: $user.height, text: "My height is:", range: (130..<230))
                         
                         VStack{
-                            Text("My weight is \(String(format: "%.1f", user.userWeight)) kg: ")
+                            Text("My weight is \(String(format: "%.1f", user.weight)) kg: ")
                             
-                            Slider(value: $user.userWeight, in: 20.0...180.0, step: 0.1)
+                            Slider(value: $user.weight, in: 20.0...180.0, step: 0.1)
                             
-                            Stepper("-/+ 0.1 kg", value: $user.userWeight, step: 0.1).padding(.horizontal, 50)
+                            Stepper("-/+ 0.1 kg", value: $user.weight, step: 0.1).padding(.horizontal, 50)
                         }
                     }
                     
                     Section(header: Text("Confirmed")){
-                        Text("You are \(user.name) \(user.lastName) with height \(user.userHeight)cm and weight \(String(format: "%.1f", user.userWeight))kg. Your old is \(user.userOld) years?")
+                        Text("You are \(user.name) \(user.lastName) with height \(user.height)cm and weight \(String(format: "%.1f", user.weight))kg. Your old is \(user.age) years?")
                     }
                     
                     

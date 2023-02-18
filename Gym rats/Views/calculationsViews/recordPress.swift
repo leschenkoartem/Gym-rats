@@ -50,7 +50,7 @@ struct recordPress: View {
                         Text("Формула Epley: " + String(format: "%.1f", BenchPressEpley(povtors: povtors, mass: mass)))
                         Text("Формула Matt Brzycki: " + String(format: "%.1f", BenchPressBrzycki(povtors: povtors, mass: mass)))
                         Text("Формула Lander: " + String(format: "%.1f", BenchPressLander(povtors: povtors, mass: mass)))
-                        Text("Формула Matt Conner: " + String(format: "%.1f", BenchPressConner(povtors: povtors, mass: mass)))
+                        Text("Формула Conner: " + String(format: "%.1f", BenchPressConner(povtors: povtors, mass: mass)))
                     case 1:
                         Image(systemName: "xmark")
                             .font(.custom("", size: 100))

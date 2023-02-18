@@ -11,7 +11,7 @@ struct MainView: View {
     
     @EnvironmentObject var user : User
     @State var selected = 2
-    @State var information = false
+    @State var information = true
     @State var isSheet = false
     var color_ = Color.random
     var body: some View {

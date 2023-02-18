@@ -66,11 +66,11 @@ struct AccountView: View {
                     .frame(width: 300, height: 2)
                     .background(Color.white)
                 
-                listAccountView(info: "Weight", value: "\(String(format: "%.1f", user.userWeight)) kg")
+                listAccountView(info: "Weight", value: "\(String(format: "%.1f", user.weight)) kg")
                 
-                listAccountView(info: "Height:", value: "\(user.userHeight) cm")
+                listAccountView(info: "Height:", value: "\(user.height) cm")
                 
-                listAccountView(info: "Old:", value: "\(user.userOld) years")
+                listAccountView(info: "Old:", value: "\(user.age) years")
                 
                 
                 HStack{
