@@ -11,11 +11,12 @@ struct MainView: View {
     
     @EnvironmentObject var user : User
     @State var selected = 2
-    @State var information = true
+    @State var information = UserDefaults.standard.bool(forKey: "informationRedact")
     @State var isSheet = false
     var color_ = Color.random
+    
     var body: some View {
-        
+
         NavigationView {
             
             ZStack{

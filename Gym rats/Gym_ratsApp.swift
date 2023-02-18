@@ -9,7 +9,6 @@ import SwiftUI
 
 @main
 struct Gym_ratsApp: App {
-    
     @StateObject var user = User()
     var body: some Scene {
         WindowGroup {

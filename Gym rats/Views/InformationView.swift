@@ -81,14 +81,20 @@ struct InformationView: View {
                     Button {
                         print("kjml")
                         
-                        if user.name.count < 2 && user.lastName.count < 2{
-                            textalert = "Too short name and lastname"
+                        if user.age<6{
+                            textalert = "Your age is incorect"
                             isAlert.toggle()
                         }else if user.lastName.count < 2{
                             textalert = "Too short lastname"
                             isAlert.toggle()
                         }else if user.name.count < 2{
                             textalert = "Too short name"
+                            isAlert.toggle()
+                        }else if user.weight < 20.0{
+                            textalert = "None weight"
+                            isAlert.toggle()
+                        }else if user.height < 130{
+                            textalert = "Your height is incorect"
                             isAlert.toggle()
                         }else{
                             confirmDialog.toggle()
