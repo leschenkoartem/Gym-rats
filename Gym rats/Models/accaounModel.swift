@@ -15,7 +15,7 @@ class User: ObservableObject{
     @Published var age = UserDefaults.standard.integer(forKey: "age")
     @Published var height = UserDefaults.standard.integer(forKey: "height")
     @Published var weight = UserDefaults.standard.double(forKey: "weight") 
-   
+    
     
     
     var maleString:String{
