@@ -14,7 +14,7 @@ struct zhbuView: View {
     @State var selectedfast = 250
     var body: some View {
         
-        var kkal = calcKkal(Mission: Double(selectedMision), activity: Double(selectedacticitiv), fast: Double(selectedfast), Male: Double(user.maleInt), weight: Double(user.weight), Age: Double(user.age), height: Double(user.height))
+        let kkal = calcKkal(Mission: Double(selectedMision), activity: Double(selectedacticitiv), fast: Double(selectedfast), Male: Double(user.maleInt), weight: Double(user.weight), Age: Double(user.age), height: Double(user.height))
         
         ZStack{
             Color("bgcolor").edgesIgnoringSafeArea(.all)
@@ -39,7 +39,8 @@ struct zhbuView: View {
                     Text("Активний споіб життя (6-7 тренувань на тиждень)").tag(1.725)
                     Text("Екстремальні навантаження (2+ в день)").tag(1.9)
                 }.pickerStyle(MenuPickerStyle())
-                    .background(.gray)
+                    .background()
+                    .foregroundColor(Color.black)
                     .cornerRadius(12)
                     .padding(.horizontal, 20)
                 
@@ -62,7 +63,7 @@ struct zhbuView: View {
                     
                     ZStack{
                         Circle()
-                            .foregroundColor(.red)
+                            .foregroundColor(Color.white)
                             .frame(maxWidth: 100)
                         Text("\(Int(kkal))")
                             .font(.custom("", size: 22))

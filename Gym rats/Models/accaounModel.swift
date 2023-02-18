@@ -9,12 +9,12 @@ import Foundation
 
 
 class User: ObservableObject {
-    @Published var name:String = ""
-    @Published var lastName = ""
-    @Published var maleInt = 1
-    @Published var age = 17
-    @Published var height = 186
-    @Published var weight = 86.0
+    @Published var name:String = (UserDefaults.standard.string(forKey: "name") ?? "")
+    @Published var lastName =  (UserDefaults.standard.string(forKey: "lastName") ?? "")
+    @Published var maleInt = UserDefaults.standard.integer(forKey: "maleInt")
+    @Published var age = UserDefaults.standard.integer(forKey: "age")
+    @Published var height = UserDefaults.standard.integer(forKey: "height")
+    @Published var weight = UserDefaults.standard.double(forKey: "weight")
     
     var maleString:String{
         get{
@@ -33,4 +33,15 @@ class User: ObservableObject {
     var firstlatterName:Character{
         get{return name.first ?? "0"}
     }
+    
+    func setDeafult(){
+        UserDefaults.standard.set(self.name, forKey: "name")
+        UserDefaults.standard.set(self.lastName, forKey: "lastName")
+        UserDefaults.standard.set(self.maleInt, forKey: "maleInt")
+        UserDefaults.standard.set(self.age, forKey: "age")
+        UserDefaults.standard.set(self.height, forKey: "height")
+        UserDefaults.standard.set(self.weight, forKey: "weight")
+    }
+    
+    
 }

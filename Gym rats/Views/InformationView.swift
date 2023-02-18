@@ -112,13 +112,14 @@ struct InformationView: View {
                
         }.navigationBarBackButtonHidden(true)
             .confirmationDialog("Do you want finish?", isPresented: $confirmDialog, titleVisibility: .visible) {
+                
                 Button(role: .cancel) {
                     confirmDialog.toggle()
                 } label: {
                     Text("No")
                 }
-                
                 Button(role: .destructive) {
+                    user.setDeafult()
                     dismiss()
                 } label: {
                     Text("Yeah")
