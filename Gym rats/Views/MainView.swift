@@ -11,7 +11,7 @@ struct MainView: View {
     
     @EnvironmentObject var user : User
     @State var selected = 2
-    @State var information = true
+    @State var information = false
     @State var isSheet = false
     var color_ = Color.random
     
@@ -96,7 +96,18 @@ struct MainView: View {
                                 .shadow(color: .black, radius: 8, y: 5)
                         
                     }
-                    Nav_link(view: InformationView(), text: "Спортивні добавки")
+                    
+                    NavigationLink{DobavkiView()} label: {
+                            Text("Спортивні добавки")
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background()
+                                .cornerRadius(12)
+                                .foregroundColor(.indigo)
+                                .padding(.horizontal, 50)
+                                .shadow(color: .black, radius: 8, y: 5)
+                        
+                    }
                     Nav_link(view: InformationView(), text: "Здорове харчування")
                     
                 }

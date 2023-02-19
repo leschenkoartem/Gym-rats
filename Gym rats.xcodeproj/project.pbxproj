@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E31BC1DC29A2AADB002E4C31 /* Dobavki.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31BC1DB29A2AADB002E4C31 /* Dobavki.swift */; };
+		E31BC1DE29A2AC8F002E4C31 /* DobavkiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31BC1DD29A2AC8F002E4C31 /* DobavkiView.swift */; };
 		E3A7ECCA299EAAB400D31E99 /* calcularionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7ECC9299EAAB400D31E99 /* calcularionsView.swift */; };
 		E3A7ECCC299EB77800D31E99 /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7ECCB299EB77800D31E99 /* tabBar.swift */; };
 		E3A7ECCF299EC08700D31E99 /* recordPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7ECCE299EC08700D31E99 /* recordPress.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E31BC1DB29A2AADB002E4C31 /* Dobavki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dobavki.swift; sourceTree = "<group>"; };
+		E31BC1DD29A2AC8F002E4C31 /* DobavkiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DobavkiView.swift; sourceTree = "<group>"; };
 		E3A7ECC9299EAAB400D31E99 /* calcularionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calcularionsView.swift; sourceTree = "<group>"; };
 		E3A7ECCB299EB77800D31E99 /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
 		E3A7ECCE299EC08700D31E99 /* recordPress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recordPress.swift; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 				E3AE319B2996D33F00CC1DAE /* MainView.swift */,
 				E3AE31A72996D38B00CC1DAE /* InformationView.swift */,
 				E3DD1B992998F32000B470A9 /* AccountView.swift */,
+				E31BC1DD29A2AC8F002E4C31 /* DobavkiView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				E3DD1B9D2999A6C700B470A9 /* listAccount.swift */,
 				E3DD1B9529979EB100B470A9 /* Nav_link.swift */,
 				E3DD1B92299702C900B470A9 /* Picker_1.swift */,
+				E31BC1DB29A2AADB002E4C31 /* Dobavki.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -211,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3A7ECD1299EC71800D31E99 /* calculationsViewModel.swift in Sources */,
+				E31BC1DC29A2AADB002E4C31 /* Dobavki.swift in Sources */,
 				E3AE31AA2996D9C900CC1DAE /* accaounModel.swift in Sources */,
 				E3DD1B93299702C900B470A9 /* Picker_1.swift in Sources */,
 				E3AE31A82996D38B00CC1DAE /* InformationView.swift in Sources */,
@@ -219,6 +226,7 @@
 				E3A7ECCA299EAAB400D31E99 /* calcularionsView.swift in Sources */,
 				E3DD1B9A2998F32000B470A9 /* AccountView.swift in Sources */,
 				E3AE319A2996D33F00CC1DAE /* Gym_ratsApp.swift in Sources */,
+				E31BC1DE29A2AC8F002E4C31 /* DobavkiView.swift in Sources */,
 				E3DD1B9629979EB100B470A9 /* Nav_link.swift in Sources */,
 				E3A7ECD3299EDDBF00D31E99 /* zhbuView.swift in Sources */,
 				E3A7ECCC299EB77800D31E99 /* tabBar.swift in Sources */,
